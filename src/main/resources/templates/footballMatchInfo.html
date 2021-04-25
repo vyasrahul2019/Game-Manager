@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Mach Information</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>CountryId_Name</th>
+        <th>LeagueID_Name</th>
+        <th>TeamId_Name</th>
+        <th>Overall League Position</th>
+    </tr>
+    <tr th:each="football:${footballs}">
+        <td th:text="${football.countryId}"></td>
+        <td th:text="${football.leagueId}"></td>
+        <td th:text="${football.teamId}"></td>
+        <td th:text="${football.leaguePosition}"></td>
+    </tr>
+</table>
+</body>
+</html>
