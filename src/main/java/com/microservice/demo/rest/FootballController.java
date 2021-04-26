@@ -1,4 +1,4 @@
-package com.microservice.demo.Rest;
+package com.microservice.demo.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.microservice.demo.api_int.FootballService;
